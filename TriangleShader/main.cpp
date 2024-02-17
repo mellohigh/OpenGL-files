@@ -91,13 +91,12 @@ int main()
 	glAttachShader(shaderProgram, fragmentShader);
 	glLinkProgram(shaderProgram);
 
-	//Checking for errors.
+	//Checking for linking errors.
 	glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
 	if (!success) {
 		glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
 		std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
 	}
-
 	glDeleteShader(vertexShader);
 	glDeleteShader(fragmentShader);
 
@@ -168,12 +167,3 @@ int main()
 	glfwTerminate();
 	return 0;
 }
-/* 5.8 Exercises
- To really get a good grasp of the concepts discussed a few exercises were set up.
- It is advised to work through them before continuing to the next subject to make sure you get a good grasp of what’s going on. */
-	//! 1. Try to draw 2 triangles next to each other using glDrawArrays by adding more vertices to your data.
-		// Solution: / src / 1.getting_started / 2.3.hello_triangle_exercise1 /.
-	//! 2. Now create the same 2 triangles using two different VAOs and VBOs for their data.
-		// Solution : / src / 1.getting_started / 2.4.hello_triangle_exercise2 /.
-	//! 3. Create two shader programs where the second program uses a different fragment shader that outputs the color yellow; draw both triangles again where one outputs the color yellow.
-		// Solution: / src / 1.getting_started / 2.5.hello_triangle_exercise3 /.
