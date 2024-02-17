@@ -28,7 +28,7 @@ const char* fragmentShaderSource = R"END(
 	uniform vec4 ourColor;
 	void main()
 	{
-	   FragColor = ourColor;
+		FragColor = ourColor;
 	}
 	)END";
 
