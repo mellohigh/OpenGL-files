@@ -24,6 +24,7 @@
     <ProjectGuid>{61ba4c19-92d0-4b4e-a397-c946a7b2b560}</ProjectGuid>
     <RootNamespace>DrawingTriangle</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>hello_triangle</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
