@@ -28,7 +28,7 @@
     <ProjectGuid>{42378584-3b28-4c4b-aa0b-bb9c73b4eef6}</ProjectGuid>
     <RootNamespace>TriangleShader</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>TriangleShaderUniform</ProjectName>
+    <ProjectName>shaders_uniform</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
